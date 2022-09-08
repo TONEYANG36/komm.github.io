@@ -4,7 +4,7 @@
     .container {
         width: 95%;
     }
-background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg)
+background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg);
 
 }
 /*中等屏幕下(平板类)的样式*/
@@ -12,7 +12,7 @@ background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg)
     .container {
         width: 90%;
     }
-background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg)
+background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg);
 
 }
 
@@ -39,7 +39,14 @@ background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg)
 }
 
 body {
- background:url(https://image.gcores.com/0e6537b7-80f2-45dd-95ec-c740488bd9fa.png)
+ background:url(https://image.gcores.com/0e6537b7-80f2-45dd-95ec-c740488bd9fa.png);
+background-position: center center;
+/* 背景图不平铺 */
+background-repeat: no-repeat;
+/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+background-attachment: fixed;
+/* 让背景图基于容器大小伸缩 */
+background-size: cover;
     background-color: #eaeaea;
     margin: 0;
     color: #34495e;
@@ -47,6 +54,20 @@ body {
     overflow-y: auto;
 }
 
+@media only screen and (max-width: 601px) {
+    .container {
+        width: 95%;
+    }
+background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg);
+
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg);
+
+}
 h1 {
     margin: 48px 0 22px -5px;
     font-size: 2.0rem;
