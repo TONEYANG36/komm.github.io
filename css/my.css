@@ -1,13 +1,15 @@
 /* Here is your custom css styles. */
 @media only screen and (max-width: 601px) {
+	background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg);
     .container {
         width: 95%;
-        background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg);
+       
     }
 
 
 }
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+	background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg);
     .container {
         width: 90%;
         background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg);
