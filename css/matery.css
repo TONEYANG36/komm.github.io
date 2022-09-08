@@ -3,11 +3,8 @@
 @media only screen and (max-width: 601px) {
     .container {
         width: 95%;
-
     }
-    background:
-    enable: true
-    url: "https://s1.328888.xyz/2022/09/08/9hFVk.jpg"
+background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg)
 
 }
 /*中等屏幕下(平板类)的样式*/
@@ -15,9 +12,7 @@
     .container {
         width: 90%;
     }
-    background:
-    enable: true
-    url: "https://s1.328888.xyz/2022/09/08/9hFVk.jpg"
+background:url(https://s1.328888.xyz/2022/09/08/9hFVk.jpg)
 
 }
 
@@ -39,13 +34,12 @@
         margin: 0 auto;
         max-width: 1250px;
     }
-        background:
-    enable: true
-    url: "https://image.gcores.com/0e6537b7-80f2-45dd-95ec-c740488bd9fa.png"
+
+
 }
 
 body {
-
+ background:url(https://image.gcores.com/0e6537b7-80f2-45dd-95ec-c740488bd9fa.png)
     background-color: #eaeaea;
     margin: 0;
     color: #34495e;
