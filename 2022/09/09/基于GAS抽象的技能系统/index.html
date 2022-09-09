@@ -5,17 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="基于GAS模块化技能设计, Tone">
-    <meta name="description" content="基于GAS模块化技能设计一、基础技能颗粒1、一个技能从触发到最后生效的一个过程
-技能触发方式
-技能释放条件
-技能释放选择
-技能表现 方式
-技能生成机制
-技能影响效果
-
-1.1 技能触发方式
-技能如何触发? 
-答：按照不同的&amp;#x3D;&amp;#x">
+    <meta name="description" content="
+  8b8737726885f80357698f45e92df0de7bcb9f22cf0360f6256deb2ad4a6cc1204f7ad9e2115bde9792445670870018ad849aba70f3bd8b1e5b4e">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -332,9 +323,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%8A%80%E8%83%BD%E8%AE%BE%E8%AE%A1/">
+                                <span class="chip bg-color">技能设计</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -367,221 +362,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="基于GAS模块化技能设计"><a href="#基于GAS模块化技能设计" class="headerlink" title="基于GAS模块化技能设计"></a>基于GAS模块化技能设计</h1><h2 id="一、基础技能颗粒"><a href="#一、基础技能颗粒" class="headerlink" title="一、基础技能颗粒"></a>一、基础技能颗粒</h2><h3 id="1、一个技能从触发到最后生效的一个过程"><a href="#1、一个技能从触发到最后生效的一个过程" class="headerlink" title="1、一个技能从触发到最后生效的一个过程"></a>1、一个技能从触发到最后生效的一个过程</h3><ul>
-<li>技能触发方式</li>
-<li>技能释放条件</li>
-<li>技能释放选择</li>
-<li>技能表现 方式</li>
-<li>技能生成机制</li>
-<li>技能影响效果</li>
-</ul>
-<h4 id="1-1-技能触发方式"><a href="#1-1-技能触发方式" class="headerlink" title="1.1 技能触发方式"></a>1.1 技能触发方式</h4><ul>
-<li>技能如何触发? <ul>
-<li>答：按照不同的&#x3D;&#x3D;触发“事件”&#x3D;&#x3D;</li>
-</ul>
-</li>
-<li>事件定义<ul>
-<li>攻击</li>
-<li>受击</li>
-<li>时间</li>
-<li>空间</li>
-<li>死亡</li>
-<li>属性</li>
-<li>状态</li>
-<li>验证</li>
-</ul>
-</li>
-</ul>
-<h4 id="1-2-技能释放条件"><a href="#1-2-技能释放条件" class="headerlink" title="1.2 技能释放条件"></a>1.2 技能释放条件</h4><ul>
-<li><p>技能冷却</p>
-<ul>
-<li>技能释放后到下一次技能允许释放的时间</li>
-</ul>
-</li>
-<li><p>技能消耗</p>
-<ul>
-<li>技能能否使用的标准度量</li>
-<li>技能释放需要的“能量”消耗</li>
-</ul>
-</li>
-<li><p>例子</p>
-<ul>
-<li>lol的蓝量，能量</li>
-<li>烬的子弹</li>
-</ul>
-</li>
-</ul>
-<h4 id="1-3-技能释放条件技能释放的选择"><a href="#1-3-技能释放条件技能释放的选择" class="headerlink" title="1.3 技能释放条件技能释放的选择"></a>1.3 技能释放条件技能释放的选择</h4><ul>
-<li><p>自主释放</p>
-<ul>
-<li>无需选择技能的“载体”即可释放</li>
-<li>主要是针对自身的使用方式<ul>
-<li>只要满足技能释放条件</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>指定目标</p>
-<ul>
-<li>选择指定的目标释放</li>
-<li>通过输入方式，选择指定的目标，释放技能</li>
-</ul>
-</li>
-<li><p>指定方向</p>
-<ul>
-<li>选择指定的方向释放</li>
-<li>通过输入方式，选择指定的方向，释放技能</li>
-</ul>
-</li>
-<li><p>指定地点</p>
-<ul>
-<li>选择指定地点（范围）释放</li>
-<li>通过输入方式，指定选择的范围，释放技能</li>
-</ul>
-</li>
-</ul>
-<h4 id="1-4-技能表现方式"><a href="#1-4-技能表现方式" class="headerlink" title="1.4 技能表现方式"></a>1.4 技能表现方式</h4><ul>
-<li>通过技能动作，特效，音效来表现技能内容<ul>
-<li><p>单次，循环，循环节点事件</p>
-</li>
-<li><p>单次播放</p>
-<ul>
-<li>技能触发时播放单次动作或者单次特效</li>
-</ul>
-</li>
-<li><p>循环播放</p>
-<ul>
-<li>技能重复性的持续效果时应用，播放循环动作或者循环特效</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="1-5-技能生成机制"><a href="#1-5-技能生成机制" class="headerlink" title="1.5 技能生成机制"></a>1.5 技能生成机制</h4><ul>
-<li><p>技能从触发到效果之间的机制生成过程</p>
-<ul>
-<li>抛体机制</li>
-<li>位移机制</li>
-<li>召唤机制</li>
-<li>信息机制</li>
-</ul>
-</li>
-<li><p>抛体机制</p>
-<ul>
-<li><p>定义：释放带有飞行轨迹的actor，在持续时间内对actor的有效范围，造成影响的机制</p>
-</li>
-<li><p>抛体的应用原子</p>
-<ul>
-<li>数量</li>
-<li>大小</li>
-<li>速度</li>
-<li>轨迹</li>
-<li>初速度</li>
-<li>加速度</li>
-<li>是否锁定目标</li>
-<li>是否到达指定地点</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>位移机制</p>
-<ul>
-<li><p>定义：指定actor通过有&#x2F;无飞行轨迹的方式，从起点移动到指定目标&#x2F;位置的机制</p>
-</li>
-<li><p>应用原子</p>
-<ul>
-<li>起点</li>
-<li>位移速度</li>
-<li>轨迹</li>
-<li>是否锁定目标</li>
-<li>是否到达指定地点</li>
-<li>actor是否有轨迹</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>召唤机制</p>
-<ul>
-<li><p>定义在指定目标&#x2F;地点&#x2F;方向，召唤可控制&#x2F;不可控制的actor（带属性）</p>
-</li>
-<li><p>应用原子</p>
-<ul>
-<li>数量</li>
-<li>大小</li>
-<li>速度</li>
-<li>时间</li>
-<li>方向</li>
-<li>轨迹</li>
-<li>是否锁定目标</li>
-<li>是否锁定目标</li>
-<li>是否到达指定位置</li>
-<li>是否可以操控</li>
-<li>是否可攻击单位</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>信息机制</p>
-<ul>
-<li><p>定义： 获取指定目标&#x2F;位置，持续时间的信息内容的变化</p>
-</li>
-<li><p>应用原子</p>
-<ul>
-<li>指定目标&#x2F;位置</li>
-<li>信息范围</li>
-<li>信息属性（视野，无视遮挡）变化</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="1-6-技能影响效果"><a href="#1-6-技能影响效果" class="headerlink" title="1.6 技能影响效果"></a>1.6 技能影响效果</h4><ul>
-<li><p>定义</p>
-<ul>
-<li>对目标造成的结果<ul>
-<li>伤害：单次，持续性伤害</li>
-<li>状态：眩晕，沉默，魅惑，击飞等等</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>伤害类型</p>
-<ul>
-<li>对指定目标，造成单次或者持续类型的伤害结果</li>
-<li>应用原子<ul>
-<li>次数</li>
-<li>间隔时间</li>
-<li>伤害属性</li>
-<li>ad</li>
-<li>ap</li>
-<li>true</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>状态类型</p>
-<ul>
-<li>对指定目标造成，单次或者持续性的状态类型效果影响</li>
-<li>应用原子<ul>
-<li>控制actor的游戏行为</li>
-<li>攻击</li>
-<li>移动</li>
-<li>释放技能</li>
-<li>位移</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>修改actor的属性</p>
-<ul>
-<li>hp</li>
-<li>速度</li>
-<li>攻击力</li>
-<li>等等</li>
-</ul>
-</li>
-</ul>
-
+                <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="86dbc7147d8f2f8dc7e3d877113ebebedbb718a3c5e69e90e1a26761c61f6c4e">8b8737726885f80357698f45e92df0de7bcb9f22cf0360f6256deb2ad4a6cc1204f7ad9e2115bde9792445670870018ad849aba70f3bd8b1e5b4ea8a7fce16ec9cce2ff567552614bbf0da8fa3d94b929a7c2cc5d05dea62c7609188e123aab0a7bcf60a57933ea74d069567ae637cbf68d88672202791284367ffd98130dae8e9666832cf50792c8c2d995af5dc9ed9fab2768d3483bd9a904c07212b83b2d60e2f0a2c11a15cc66346e7dd32083f28d8498cd84be1ab2d5436da5eb1a41759512fd46bee7c44b6a78e6ed7e9e260baa41315185d74e57cacdd9658d7511fc18ad08baf476558ae5dce434a6fb18df434787ff197a2395fe15360b49aa4954647e90ce67bce3d46dba810a9339960594155dfb3cf4fa9a3d21c8105b9975ade40043ca07acd9a115abfe418aa6c6d3b948e2b67567094803cb6f40789a70ec0fa1c3b34c9ab77814bb6a8b20f8ac695066fc56bf5b382ee560eb4d6c60bf1bebe8c961155f5e5779df18ac96f447949d6254f770ea5a0d52f49cd10005334c6776e6120ee11df163a7134f3002f8ef8ceb67d762d4d4c6c980491e5a575581b0b2c322522340303a7cbec5eeeee982e29f6972df2349b7f40d3da20d9ce5146edb4834f76f8620b8f675f190474b53440c1ae2acd43cd7d74743a4c5646415b4aa368e052ba6756126e4efb4976a79acf4199c6dedf47a913a73e3aef4e404598596e68ded0f83c9459a46763413673cf9205f1f0b3198c8c5c3dad2b916dd4af9a91f20fc4483726417fc817bd76646f4260b2046d2c8e7881aa9b7f0794f06fd89eea2eb68702578ce13039fc3261a43660e16d5e31e686205074bbe5906cf01be11e86acfa1c1aacc4aad58d86b0a620ba6c385f42af4d4b5d3c5934caacbc4d71fe27ed98740ae2a0bc3cf3ee1a51f735c42571913e43322b6e96f2fe20b3ce18f610c70d38c96b2857661878f598d489ce11bc5c00511bef8337e81df3e007ea3bc547cb007bf04030fc59f2a1318a98bdcb4915dce8d0406f43d0f7d63166b53317d8682b345f53345dad89d8ffde1d241ac76a881f27710eb1235a3574aa9a6048b62afdc75bbd353a46ac3b602fec30e5f595ebde259cc3e762ad71cc49ce5eadc0b592cbd2804b3a2fd1add70aabff476ea917b511fc861d44554f4a562b8a79e64b3e89089130e2f6e4051432d4d6fdb2c4f40eec05486cda2060ea07d1c1369a70dde5fa00240d6d2f30ad3bd715c33ba3afc9ae6a198d8b76f9852d02e54679ec162d3f5af14aa8c35970e62948c429c0314483c61075d3bc3212e7252c9fe560da1da17120b0c757b0b186a62efe46a07fa7543ad541a20d2ad808e2ae686c3a314cca4edfd405c3263c8a2da0b521e4a9dc52e87017cf442102487038394ca0c4ba356fe6e73c2fcf94bc31d5309926df9b4ab9aec23ddefa17b7753f145c79c2a3b54439f1ecc28f7e7fd155efaaef7a0cd2dab11dbe541f31ea7d627916afbcbbdf7756842a8243991810e84c2f48df05c6c3fc6724759286e3575bf317209b881d3aca47ee172ab5672f0bfdaf495c4af15ce60046cdf67d1189eafb74dad8b5d9ce67b243bfe259c378bd9afa3be0320dcbe43c2869e2992bd46c2ef3ca3aef4105f53c965d2c94ceb50e61dc5ad653a3467edd4a1d4e87be4308b7df281a76198433d3813a4352862baf24165765d3ecbdd2b058e432240265ffa8bc79470cdb254f7f38bbdfcda3e06851740dcbe622e12caa15e29bf305c4c1f9c6a7257b6896db48286985158fc0df79f85c3fa6af32cb486a0059c387b2894be406ed077ecf1d33d90623ab1d1b8277ca5535e7da333935ce2982d56803f0c1a0a9273b9b5171679e45f671492a37a609ac4e67b5238b8d896a4e6001baa756455abfd6cfd774f325d45df53cf4b206de8e30bf8058105aef03af33a351654961d199307c0c5e43f789632ca9f407725dc925ef69fa0d2a68caefd9d7b74d0d014958ebc64f4d6e7175a8f7ef7a5256e81ce4ffc3ed56c6369aa6996da652e184d9347902acba9b0e17d1999c76f33136b3698ee8fbc58b13bb5fbc01e2d6af3f0df7f734323f191a5f81ef56e506881c2a7d1a3ce82b729846ea2cf133a104ef6f77d55c76c3ef799a475f04a344b6bd1d6842c078ab7570703d3eb9d2c9b1d299b58b62dfd1ce5c012aa3f0da6a5a3519843f569a7a9142f8c2cd3d6c1133d55128d4220bdb6a82a0d5fd7cc2d6030e85f4c299cca80cf9bc469b4e2b84a27212cc3bd46d1fe8039e54fe23737b7861d446d9ad47de21454b9d8654644a26816ef0036a5f9dc897d2ff61dc0c82a715b0d5fb3fbcc4a3a0fd2b9bd57f7eb82faa78963b44789e26886c4977f5a4e97c8b92e5a553bc16ca460c114f53e600d55a446d409dc8b44276890338d81ce9c7c0934f9afb369027ff9a9ef88234b368d0880474e76ea480634f8de6583cdecbccd3d971ac7173cb0e8deb98cd39c1262df72a322a224deb57ae9580613d98faf891318cb4392c8efccb9db55e1db2636df390208c0446320a79de6de4a5062cdba2815c3eaa635cdaabbd72fcbfc87baec55460a7c222058fd5a886dc0e5cc9966acfae6188549bb0e2a5fa30c2e01dc58cde53e8a8496ef47e5a1ac0d32c6d761c89e53f5f6ddfe54066a7e53414671ce5add0a5dec1f66769c74b1d30e3952d8db87325a586e076e2eb0a6ff2e720cd6c7c38f0ac3aa16ee4d80744870625a39b2f9fbb93e34b710adc3c7dac0979196946a0588dfa81bcc3e2a16048800bb4f9e00829d8b06a309269b07ff4e2dd885c9633a4bf0e8f44e5e68affbf0bbf4520c519dec4f4a2fab6f818c07c84f5141bd27df55607602b3f72f9c5e79ad5c24c344bb6c6ceca9cfe2c8eb603d05481f478ae714bd85891957a8a22baa0e1eb0df826196de132716f7a499df524bd93a7568d10e01e40ad78e19f19c0831f1fe45c26906c2887e6d5c75362b0f04dbd1fd27bb99584a150e475f4cf94b9a95ab12dc389337bc16fc7393b1173ce9ff5e7b729ba26fb9c6ea6a35dad56136d8e14deabfa6d6f92636bc3d6152ac99b2484d8b260c97348230f9075ccdd8c94a660a19ac156df60050a50199bf2a706f35412f9342e53c3d3c016c06687afacc292256b3e9d0fb61aad64787973f0ff51b4c92a63571b607a87c61e3c62a9b6a21846b7a5d8d87a2c278c38056ca1f86a80057dfdfb422703dcb13a78b7b3f77b58d1659460c93bedfb8f2b0ab83593abba24f3f84d1b6d0abfa9ac49d27ea565d55d54fe725057a106cab816cbf70c1fa7d33e0cc7feb5117608c4796153c8a15620cea2ce7bf367431e720460a53ff3107381489033e746cbed8f704b602db0026d7f66b37d7c8c464e76156067bd8d24bc95cddfc71c3b8644d13fe4832a37a4001832b079e62dc3b38bf83b9ae918217a8b22aa412d3760ebfc59c806ba9f04d53c871fd82b670d81f91d071ffa86b2eecc51c62c3b0ee19c165ce32dd9d7bab757c37af6228f8f4846f9265792656c66eea59b01b0e284e32a8f0f5095f85f4683437061c00051fdfea3a3fdd63d7381e01e2f1105403059af4aa16aa9cb60ea1da813ac564aaaedd394c99ed1342a1f712e4d86ad345b0f648dcaebd8968c70864758252918ed517c52074b9be0b24a80426eecc8525bbd9882b7e33a757ab6b3099f1360b5a195660a038536df0b5acd589c76500735531c88fe885387127e0cc70cb0dfb1bbd2dce49a34fdcd295745407dea77d661db2f6baf397728ec3a8fc1914f7ca805ea6f3c5d00298ab88e7d9005ddbe48bc1b805da1be7f5274f09725e36f5894113d48bb8a8ea58095092c56978448c972416faa852653c5644fe6cb1bea3b3dcfddb5d30a3b66d20af0697735ee515d2ce47d679868c7a10e388c8f30a7fce102799a86eff13583b05f71c06d99374c552885ae717d01a5d6d943b6e9e77bb77ba4299259292828d262806eb77e1f8b6c8a1f05e8df0ee738893488fc6ea9fab287c6f43a65c8bc8ba892fa761dfc612be1dccb88a7d56a3335ce26debe764736ffe90610c653b390ea9d173063175d71738dbf5f2d78efe7be12f8fc41029977b65548f84bf8c5fb16ab7be779e16f5f09d17745b8c7e81370c7b1c3b2dc81e7506c5728224f19e99fd9195daea4d7bc0836a477f650461f7f05268509b06a2fc764b7d6f053f79655a17387b3ce677b680a4e7cf5e854b0a30d6997a14f584dd44287fb656fb911d5469b8f9007ab02b330d0cd6297f816dcee19db019829c6b48867ac7b57b944882647f809359b64ca6e45456ed4bc0fd6d19e14974608817547b179eebb29758050d9fb91de38d9c3c9c4c12b44da80e9fcf5a9f394d47bc44124456301921804a7ae9fc483ee02764e02ad49bc84b6f8acbc333c577602c384af3af6bb25b74ac2506d0372263e31adbf1e6a433572bf5713f47188062f47119374c9af9bf9cdd9827cb5970a3d52e866881985f165622672e3f298397272a8407175fb5057d36f7ccd761f4c9f9ded928761dc02abba4a4d814505dc8cfd9f3acc5a66ba3e36360140ea6cac1371b236077236146c9707b726da0da5c5f5068bd29115e32a14db0df0347719160ed69fe49e85bf548838cbeba040dea1c8c439056cb97fa2d044f554d1841383199b6e9087eb3e3960016412c544e2e2f45236bb52f7fb4df06b6396b427ce5d711e905a328ff9cd803fca2feb699fa937f4106e5342139cfb0fa47679c3202c0d629e2e2fb47ddb44f34e24e3ee69b63ea74733e33b2c1442452e5abd0c7b535aa9d3bb0bfe6de1be1f073388713ebb8f9a05ec5efe9686de53c0586b04f87b5f9dd1fabd634f2d4723a03684b0f44da7d2e2d81810c00014b51b7966dc785dfe7475acec44d6a513f82701346daab4fbf7352fe7fa53f452640cf535180770b88ab793d14d59a85f53769062899cf9c8b65ee00f15738fdc29226420e5f168fc9a58bba5e5d2516f29c40aeba40d1756b1bcc72c9b027f133170f1177ef747d6ecc1f514aa829bf484caf25c841c36a5064f5195d5798fff3ef4a03f298c346792f0d5f2a8b1e285a01870497abad237d446a694b7ac2c0b1a96a5040a00104d75391c44f2a761926181cf709811aaf63b72e6361dd2d27dd452e0d3ea13317f6855b9da9a5d0d8593ca0e5c417a260c32c09eb4a2e8a64564c01c8d76f986bff8ecaeeee25c406ba8fa6126c15b79e399e8168b9cc1f1970ab722c9d2e686adcd9f85ae7fc402637e12886474b3f2d3202c3227dcbcb60e1f9753ee0eedffae40b0cc4ed66b11a2ab9258a6e8de8ab8e4e79d60b90c95e4283bd810d3df12a46e65e4ac55047840036c4180f0eb06a782db9193e8dabeaadec05fea7dc87055017421cfbeaa133de812a2de43119d01321a40300c52c32cecb39fe7b2646f0a406bcbae82c719464e80fe56cca3119672f1999c21151244301abf3eba60bf50184995c1f8045150365f0289453e0993c139ec5225fabc8eef241bf469cd0905045d86029ceab1a7c244ff14f0495093a80a41ade5be3d779af02ae921cd36897698dc459143ebc6f71e9bef22fce9c4693fd9cd9ac964db42612ed3c379a3715043589f48be370ee8829214ef2e728dd9ebf85709d19313b707d2d52b312fcebc2add01f6c098efb521d6d458ccb797da6c26a05c522c99fc1597de87c35dc5f9ab96eafdf1019716a0be85945b879c94fd43f772b535229ec47f90f1e667ab8d7b0414b143fde5438085899cb43efae4eff99e3d1eec72a04439623c7896fd89cc310b3718c6e251d963176a12f8cd692011e1c9fa0a577ce6ceb10f44e24362fe7a6c8bf1e2d0659809c4160a98a6ca82374b117d595408399f7b465170c11f83020c57d978153356056ed32824662b92323dac56aeb3cda0de8a69cc0e56922f2e9b20004911b04df1f11048a61b508c8e5d8e376ee0adbb23dc1851aa1ea748cd72481c6aec4695dd8568a16fb6b6955be3d06c626dd39fb8bf6ea6301d62893e76651b4b2c67592cf95c40cfaf137163786185b6e00e897e04cc589cfc7a755305c7f10c10c0d82c5da015fb21f6190a92d488c4929bad2a7acc8c8f8bf64060941873ce26dd3d9258a8505eedbe1a5e7993d2f6609e808455dfcb21606dcc110487e4bd6403a7554a1d32544fddd4a2a59d205ef489ac8dde5f521d40d930376768cb838565f7dfd2bef6e8426cddf92b7462afe90b76b63149341f9d03287df07cda5e7d233032f911c3369f0c9d42796efd6a165e9574fdb72edc659b31e342d3007599cd70a67969cbf28b51041c2a5db451e089878ea5427da1f377c142fc52fd2a3d5d9bca387759d6545a4fd5093069512784d5a5e0c985b279fef78bd8dc85f806d32c3e312eb495c340f300411b546bf77064708501cc032fda8725756fbee7dc5652b322d776514ec8d401100c5b35acf71d680d89b3eb2e75424af7931273619d1a39dcbbb55c45930a0b677958244a9c031332624a1e71bdddb5c820c0b5c73c672d7274a1fd408ce0866f96d67e9ad4abdcb9cdadc71228826ecf5c371797c12832f226a575cdba40e89ce56e248b63329e6408bc2afefaf3c9f54017b3a3654e413cfdbaabe45ef861adda7d34d9726c3fde4b2847264f0b708fc39d6053a29e47f2bd62dc16f4ad57fda2d6de6ff5a51710379af103da2c80685a089ef54d57f5560c565f9dac4eb77f434f30e44f620160fe7ea88ffeda0b18f6069b823e001b542765bfd4b33664e86c57c07db8220d84c76f3c063e8f499eeb311e7e4cc6663e3567fc83348ab184d686b3744aadef57d0e4f535f4cc30ab86969ed07830616882cdc9a0f9ea9d0a9fa5c2a5eb9b85334b48e6467805cb10ada61afdac18cb2cb0837555ddc9438bbaf4dca621c0a5503d5d560ef8f2235ff4bb7ee22061b1c3f8d43d6b84d57eb8bd072361682b4648d3afe745f36b9c5c9fcf78d3515e85b669e63aa3292bbbee5a669afe3d66555afb618ba78f714b8491a372f590b230e1dd6ed5daba21bcb486c899602d1429f7f64628e44114a3264f82fbcf21b371073efe53d8ff7ec0d423ef206c419df086191b24bc99dd62d07b35c25fee1c38b2cd8747e0c212aebf321258a7b406a5c4f98b8691bd5b6f29b1440f419dd5caacbb4ed1c2e037cd9eef69edc20ec519890feadef532d06c0a637709b11298b1509131e85987762ecbb22660271a0d012607844962599bd5b19d6789dd53e575a54769031f06f6819f804c22b17d5f44149fa6e33b831bf0d6514e5bba177ec4c92242503bf5ae31dcd9d967a414a59fbeba1dce118323fe3d63fb8fcb5bf5be1bd8d1bca96680bd22572ab157b78575b8c38a813cfa15399646f85dbdb3fea72eb731279564726e49e050c5af49d141809f823ec4ca319d8955ae472b3355a76370c7c29355adeaf91c2bb2ca038e4a48077980f5c98a4c0566e00d811b7cb8f1b52d97205be880473051fae4fc612490e4c8642a1450e44adab0a35193d742807df2c26620c6ece4cefa70301d7d975f4a80ec4a826655dfdcef9e0846dc359476dca016ba0bab502c288327016f701fdb082b2559aca8fa4426cffbbda0c0a69bc58a30b204da5c7db8dc4be2412be1fdca6fd64e60315864ac97050cfda9186b844bff2443d3e0fb6279d850ac71a5a4eab4c96457d9fa1058af9b9fad01d6220ff70c2f4b851e1d55f70e4aabe0a4d4d2d4b08dee76485c3eb2eefdd05ba2536f6560ac8f09e8e7d7cda10cda9c14c6675e1b502b15ce1159bde90bd8937becf3a69c2b43f341cd1f8dcb4b45dabed20de9bf358d989983be13d0ebf6e66a03364d0ba75813dbf0cb988f17e4b0e066d65bf340bcd7b5becb6e9f1cc9adae4ade129522f47f125fd26a1acebc2f0933a91a1adbc6303dde295cadb944e231979644c579ada7954c56c2bc2bc04a1579f9018c7416f63de6cd22cab3985604e76d2ab5ad7fddbe92ee75ff1495a2183755568a49b4d236c6952ab1eaee4141faa0e1f06caf0d52be23fa223d7bd9e5bcd8feb558000eb8a267eb20ec8634745aae391997f752318866365e8803d54e9652dae9150928135fb9ae0488444f99f1d7d56fbde281bdd4d6cebef77940d375171ee13736b34acb063706114c07669968f32de004b118c3f4305b1b68c55054d25945b0e4ca6948af465d93a0616ae0828058b8e7cead56a3dd0350bb22c356a0ca99cc914ba275949511cb5eaf8152810ae65b06a31d221f6efa6ddbdd1122b7cf163ad9d3c070b99a8d73036f5096dfda</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
                 
             </div>
             <hr/>
@@ -644,7 +436,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E6%8A%80%E8%83%BD%E8%AE%BE%E8%AE%A1/">
+                                    <span class="chip bg-color">技能设计</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -705,7 +501,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Here's something encrypted, password is required to continue reading.
                         
                     </div>
                     <div class="publish-info">
@@ -721,6 +517,14 @@
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%8A%80%E8%83%BD%E8%AE%BE%E8%AE%A1/">
+                        <span class="chip bg-color">技能设计</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -922,7 +726,7 @@
                    loop='all'
                    order='random'
                    preload='auto'
-                   volume='0.7'
+                   volume='0.3'
                    list-folded='true'
         >
         </meting-js>
