@@ -20,19 +20,6 @@
       </tags>
   </entry>
   <entry>
-    <title>简述枪械设计</title>
-    <url>/2022/09/13/%E6%9E%AA%E6%A2%B0%E7%AE%80%E8%BF%B0/</url>
-    <content><![CDATA[<h2 id="武器对移动修正"><a href="#武器对移动修正" class="headerlink" title="武器对移动修正"></a>武器对移动修正</h2><p>待定</p>
-<h2 id="武器后座力"><a href="#武器后座力" class="headerlink" title="武器后座力"></a>武器后座力</h2><p>待定</p>
-<h2 id="武器操控性"><a href="#武器操控性" class="headerlink" title="武器操控性"></a>武器操控性</h2><p>待定</p>
-<h2 id="稳定性（精度ACC）"><a href="#稳定性（精度ACC）" class="headerlink" title="稳定性（精度ACC）"></a>稳定性（精度ACC）</h2><p>待定</p>
-<h2 id="武器RPM"><a href="#武器RPM" class="headerlink" title="武器RPM"></a>武器RPM</h2><p>待定</p>
-]]></content>
-      <tags>
-        <tag>枪械相关</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于GAS模块化技能设计</title>
     <url>/2022/09/09/%E5%9F%BA%E4%BA%8EGAS%E6%8A%BD%E8%B1%A1%E7%9A%84%E6%8A%80%E8%83%BD%E7%B3%BB%E7%BB%9F/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -49,6 +36,60 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <tags>
         <tag>技能设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大世界体系设计</title>
+    <url>/2022/09/15/%E5%A4%A7%E4%B8%96%E7%95%8C%E4%BD%93%E7%B3%BB%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<h2 id="开放世界游戏定义"><a href="#开放世界游戏定义" class="headerlink" title="开放世界游戏定义"></a>开放世界游戏定义</h2><ul>
+<li>游戏提供一个有限的空间，特定的活动空间</li>
+<li>但是在这个特定的活动空间，玩家可以在几乎任何时候，完全依靠自己的意志来进行任务行动的选择和改变</li>
+<li>游戏变化多样性最大化，以提高玩家可交互的可能</li>
+<li>但是玩家仍在一个有限的，游戏允许的框架内进行游戏</li>
+<li>依赖于系统化设计，给玩家客观的自由度，来利用系统进行游戏</li>
+</ul>
+<h2 id="开放世界游戏内容结构分析"><a href="#开放世界游戏内容结构分析" class="headerlink" title="开放世界游戏内容结构分析"></a>开放世界游戏内容结构分析</h2><ul>
+<li>待写</li>
+</ul>
+<h2 id="玩家自己的故事"><a href="#玩家自己的故事" class="headerlink" title="玩家自己的故事"></a>玩家自己的故事</h2><ul>
+<li>待写</li>
+</ul>
+<h2 id="系统化设计"><a href="#系统化设计" class="headerlink" title="系统化设计"></a>系统化设计</h2><ul>
+<li>待写</li>
+</ul>
+<h2 id="开放世界的未来探讨"><a href="#开放世界的未来探讨" class="headerlink" title="开放世界的未来探讨"></a>开放世界的未来探讨</h2><ul>
+<li>待写</li>
+</ul>
+<h2 id="开放世界体系总结"><a href="#开放世界体系总结" class="headerlink" title="开放世界体系总结"></a>开放世界体系总结</h2><ul>
+<li>待写</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>开放世界</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简述枪械设计</title>
+    <url>/2022/09/13/%E6%9E%AA%E6%A2%B0%E7%AE%80%E8%BF%B0/</url>
+    <content><![CDATA[<h2 id="武器对移动修正"><a href="#武器对移动修正" class="headerlink" title="武器对移动修正"></a>武器对移动修正</h2><p>待定</p>
+<h2 id="武器后座力"><a href="#武器后座力" class="headerlink" title="武器后座力"></a>武器后座力</h2><p>待定</p>
+<h2 id="武器操控性"><a href="#武器操控性" class="headerlink" title="武器操控性"></a>武器操控性</h2><p>待定</p>
+<h2 id="稳定性（精度ACC）"><a href="#稳定性（精度ACC）" class="headerlink" title="稳定性（精度ACC）"></a>稳定性（精度ACC）</h2><p>待定</p>
+<h2 id="武器RPM"><a href="#武器RPM" class="headerlink" title="武器RPM"></a>武器RPM</h2><p>待定</p>
+]]></content>
+      <tags>
+        <tag>枪械相关</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>komm,susser tod</title>
+    <url>/2022/09/19/komm,%20susser%20tod/</url>
+    <content><![CDATA[<h2 id="最近的一个的奇怪念想"><a href="#最近的一个的奇怪念想" class="headerlink" title="最近的一个的奇怪念想"></a>最近的一个的奇怪念想</h2><p>  听着一款奇怪的“甜蜜的死亡”，想着那两段很应景的话。</p>
+<p>  离那颗14公里的陨石撞击地球还有四分钟，没有进入避难所的民众聚集在一起，恐惶不安地等待着最后的时刻到来，天空中陨石进入大气层的光芒晃的所有睁不开眼，而之前一直播报着新闻的电台却突然没了声音，紧接着，是一首稍微有点跑调的曲子。</p>
+<p>  等世界末日后，外形人来到地球残骸。空旷的维也纳大厅 5个步进电机不断地循环着这首歌。当外星人疑惑这些先进造物主到底去哪了的时候，太平洋橙色海边又响起了亿万人的合唱。</p>
+]]></content>
+      <tags>
+        <tag>杂七杂八</tag>
       </tags>
   </entry>
 </search>
